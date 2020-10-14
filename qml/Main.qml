@@ -122,13 +122,7 @@ Page {
                 spacing: units.gu(3)
 
             ZimbraDivider {
-              text: "General"
-            }
-
-            Label {
-                width: parent.width
-                horizontalAlignment: Text.AlignHCenter
-                text: i18n.tr("\n")
+              text: i18n.tr("General")
             }
 
             Image {
@@ -155,7 +149,7 @@ Page {
             }
 
             ZimbraDivider {
-              text: "Connection"
+              text: i18n.tr("Connection")
             }
 
             Image {
