@@ -169,7 +169,8 @@ Page {
                 Layout.alignment: Qt.AlignHCenter
                 color: UbuntuColors.green 
                 text: i18n.tr("Connect to your Zimbra Server")
-                onClicked: Qt.openUrlExternally(settings.myUrl)
+                onClicked: Qt.openUrlExternally(settings.myUrl),
+                           Qt.quit() 
             }
         }
      }
