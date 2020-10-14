@@ -90,14 +90,19 @@ Page {
         trailingActionBar {
             actions: [
             Action {
-                iconName: "info"
-                text: i18n.tr("About")
-                onTriggered: PopupUtils.open(Qt.resolvedUrl("About.qml"))
+                iconName: "settings"
+                text: i18n.tr("Settings")
+                onTriggered: PopupUtils.open(settingsComponent, root, {url: settings.myUrl}); 
             },
             Action {
                 iconName: "help"
-                text: "Help"
+                text: i18n.tr("Help")
                 onTriggered: PopupUtils.open(Qt.resolvedUrl("OfflinePage.qml")) 
+            },
+            Action {
+                iconName: "info"
+                text: i18n.tr("About")
+                onTriggered: PopupUtils.open(Qt.resolvedUrl("About.qml"))
             }
             ]
             numberOfSlots: 2

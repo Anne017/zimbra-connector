@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zimbra Client\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-14 13:26+0000\n"
+"POT-Creation-Date: 2020-10-14 13:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,30 +32,38 @@ msgid "Zimbra Connector"
 msgstr ""
 
 #: ../qml/Main.qml:94
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Main.qml:99
+msgid "Help"
+msgstr ""
+
+#: ../qml/Main.qml:104
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:125
+#: ../qml/Main.qml:130
 msgid "General"
 msgstr ""
 
-#: ../qml/Main.qml:139
+#: ../qml/Main.qml:144
 msgid ""
 "Thanks for using the Zimbra \n"
 " Connector for Ubuntu Touch!"
 msgstr ""
 
-#: ../qml/Main.qml:147
+#: ../qml/Main.qml:152
 msgid ""
 "Get loged in to your \n"
 " personal Zimbra Server."
 msgstr ""
 
-#: ../qml/Main.qml:152
+#: ../qml/Main.qml:157
 msgid "Connection"
 msgstr ""
 
-#: ../qml/Main.qml:166
+#: ../qml/Main.qml:171
 msgid "Connect to your Zimbra Server"
 msgstr ""
 
