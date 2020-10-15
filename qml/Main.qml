@@ -14,7 +14,7 @@ MainView {
         automaticOrientation: true
         anchorToKeyboard: true
  
-        property string appVersion : "v3.1"
+        property string appVersion : "v3.2"
 
   property string myPattern: ""
     Settings {
@@ -87,12 +87,7 @@ Page {
         title: parent.title
         flickable: flick
         trailingActionBar {
-        actions: [
-        Action {
-          iconName: "settings"
-          text: i18n.tr("Settings")
-          onTriggered: PopupUtils.open(settingsComponent, root, {url: settings.myUrl}); 
-        },            
+        actions: [         
         Action {
           id: themeAction
           text: {
@@ -128,7 +123,12 @@ Page {
               bottomEdge.collapse()
             }
           }
-        },                
+        },
+        Action {
+          iconName: "settings"
+          text: i18n.tr("Settings")
+          onTriggered: PopupUtils.open(settingsComponent, root, {url: settings.myUrl}); 
+        },                         
         Action {
           iconName: "help"
           text: i18n.tr("Help")

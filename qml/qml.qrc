@@ -3,7 +3,8 @@
         <file>Main.qml</file>
         <file>About.qml</file>
         <file>img/logo.png</file>
-        <file>img/about.png</file>
         <file>img/connect.png</file>
+        <file>img/day-mode.svg</file>
+        <file>img/night-mode.svg</file>
     </qresource>
 </RCC>

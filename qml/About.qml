@@ -11,7 +11,7 @@ Dialog {
 
             Image {
                 anchors.horizontalCenter: parent     
-                source: '../img/about.png'
+                source: '../img/logo.png'
                 fillMode: Image.PreserveAspectFit 
             }
 

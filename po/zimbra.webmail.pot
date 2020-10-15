@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zimbra Client\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-15 10:44+0000\n"
+"POT-Creation-Date: 2020-10-15 14:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,16 +31,16 @@ msgstr ""
 msgid "Zimbra Connector"
 msgstr ""
 
-#: ../qml/Main.qml:93
-msgid "Settings"
-msgstr ""
-
-#: ../qml/Main.qml:100
+#: ../qml/Main.qml:95
 msgid "Nightmode"
 msgstr ""
 
-#: ../qml/Main.qml:104
+#: ../qml/Main.qml:99
 msgid "Daymode"
+msgstr ""
+
+#: ../qml/Main.qml:129
+msgid "Settings"
 msgstr ""
 
 #: ../qml/Main.qml:134
