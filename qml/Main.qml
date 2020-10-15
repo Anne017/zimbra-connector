@@ -162,7 +162,7 @@ Page {
                 spacing: units.gu(3)
 
             ZimbraDivider {
-              text: i18n.tr("General")
+              text: i18n.tr("General info")
             }
 
             Image {
@@ -191,7 +191,7 @@ Page {
             }
 
             ZimbraDivider {
-              text: i18n.tr("Connection")
+              text: i18n.tr("Zimbra connection")
             }
 
             Image {
