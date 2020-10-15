@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zimbra Client\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-14 14:16+0000\n"
+"POT-Creation-Date: 2020-10-15 10:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,47 +23,55 @@ msgid ""
 "com)."
 msgstr ""
 
-#: ../qml/Main.qml:72 ../qml/OfflinePage.qml:63 ../qml/About.qml:41
+#: ../qml/Main.qml:71 ../qml/OfflinePage.qml:69 ../qml/About.qml:43
 msgid "OK"
 msgstr ""
 
-#: ../qml/Main.qml:85 zimbra.desktop.in.h:1
+#: ../qml/Main.qml:84 zimbra.desktop.in.h:1
 msgid "Zimbra Connector"
 msgstr ""
 
-#: ../qml/Main.qml:94
+#: ../qml/Main.qml:93
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:99
-msgid "Help"
+#: ../qml/Main.qml:100
+msgid "Nightmode"
 msgstr ""
 
 #: ../qml/Main.qml:104
+msgid "Daymode"
+msgstr ""
+
+#: ../qml/Main.qml:134
+msgid "Help"
+msgstr ""
+
+#: ../qml/Main.qml:139
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:130
+#: ../qml/Main.qml:165
 msgid "General"
 msgstr ""
 
-#: ../qml/Main.qml:144
+#: ../qml/Main.qml:180
 msgid ""
 "Thanks for using the Zimbra \n"
 " Connector for Ubuntu Touch!"
 msgstr ""
 
-#: ../qml/Main.qml:152
+#: ../qml/Main.qml:189
 msgid ""
 "Get loged in to your \n"
 " personal Zimbra Server."
 msgstr ""
 
-#: ../qml/Main.qml:157
+#: ../qml/Main.qml:194
 msgid "Connection"
 msgstr ""
 
-#: ../qml/Main.qml:171
+#: ../qml/Main.qml:208
 msgid "Connect to your Zimbra Server"
 msgstr ""
 
@@ -71,31 +79,31 @@ msgstr ""
 msgid "How to Enable Offline Mode on PC Client"
 msgstr ""
 
-#: ../qml/OfflinePage.qml:13
+#: ../qml/OfflinePage.qml:14
 msgid ""
 "If you use the Zimbra PC Web Client in Chrome or Firefox, you can work "
 "offline with access to one month of data!"
 msgstr ""
 
-#: ../qml/OfflinePage.qml:18
+#: ../qml/OfflinePage.qml:20
 msgid "To enable Offline Mode:"
 msgstr ""
 
-#: ../qml/OfflinePage.qml:23
+#: ../qml/OfflinePage.qml:26
 msgid ""
 "1. Open the user menu in the top right corner of the Zimbra Web Client, and "
 "select Offline Mode, as shown below."
 msgstr ""
 
-#: ../qml/OfflinePage.qml:34
+#: ../qml/OfflinePage.qml:38
 msgid "2. Select Allow offline mode, and click OK."
 msgstr ""
 
-#: ../qml/OfflinePage.qml:45
+#: ../qml/OfflinePage.qml:50
 msgid "3. Click Yes."
 msgstr ""
 
-#: ../qml/OfflinePage.qml:56
+#: ../qml/OfflinePage.qml:62
 msgid "4. Done."
 msgstr ""
 
@@ -109,16 +117,16 @@ msgstr ""
 msgid "This is a Zimbra Connector for<br>Ubuntu Touch."
 msgstr ""
 
-#: ../qml/About.qml:20
+#: ../qml/About.qml:21
 msgid "Thanks to Jeroen Bots and Ewald Pierre for suggestions and testing!"
 msgstr ""
 
-#: ../qml/About.qml:26
+#: ../qml/About.qml:28
 msgid ""
 "Copyright (c) 2018-2020 <br> by Rudi Timmermans  <br><br> E-Mail: <a href="
 "\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>"
 msgstr ""
 
-#: ../qml/About.qml:33
+#: ../qml/About.qml:35
 msgid "Donate"
 msgstr ""

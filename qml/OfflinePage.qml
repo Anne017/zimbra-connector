@@ -10,16 +10,19 @@ Dialog {
 
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('If you use the Zimbra PC Web Client in Chrome or Firefox, you can work offline with access to one month of data!')
             }
 
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('To enable Offline Mode:')
             }
  
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('1. Open the user menu in the top right corner of the Zimbra Web Client, and select Offline Mode, as shown below.')
             }
 
@@ -31,6 +34,7 @@ Dialog {
         
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('2. Select Allow offline mode, and click OK.')
             }
 
@@ -42,6 +46,7 @@ Dialog {
 
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('3. Click Yes.')
             }
 
@@ -53,6 +58,7 @@ Dialog {
 
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('4. Done.')
             }
 

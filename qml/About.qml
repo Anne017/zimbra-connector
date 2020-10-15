@@ -17,12 +17,14 @@ Dialog {
 
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('Thanks to Jeroen Bots and Ewald Pierre for suggestions and testing!')
             }
 
 
             Text {
                 wrapMode: Text.WordWrap
+                color: theme.palette.normal.baseText
                 text: i18n.tr('Copyright (c) 2018-2020 <br> by Rudi Timmermans  <br><br> E-Mail: <a href=\"mailto://rudi.timmer@gmx.com\">rudi.timmer@gmx.com</a>')
             }
 

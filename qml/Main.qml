@@ -10,17 +10,17 @@ import Ubuntu.Components.Popups 1.3
 MainView {
         id: root
         objectName: 'mainView'
-        theme.name: "Ubuntu.Components.Themes.Ambiance"
         applicationName: 'zimbra.webmail'
         automaticOrientation: true
         anchorToKeyboard: true
  
-        property string appVersion : "v3.0"
+        property string appVersion : "v3.1"
 
   property string myPattern: ""
     Settings {
         id: settings
         property string myUrl
+        property string theme: "Ambiance"
     }
 
     Timer {
@@ -64,14 +64,12 @@ MainView {
                 id: address
                 width: parent.width
                 inputMethodHints: Qt.ImhUrlCharactersOnly | Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
-
                 onAccepted: settingsDialog.saveUrl()
             }
 
             Button {
                 text: i18n.tr('OK')
                 color: UbuntuColors.green
-
                 onClicked: settingsDialog.saveUrl()
             }
         }
@@ -79,6 +77,7 @@ MainView {
 
     Component.onCompleted: {
         checkUrlTimer.start();
+        Theme.name = "Ubuntu.Components.Themes." + settings.theme
     }
 
 Page {
@@ -88,24 +87,60 @@ Page {
         title: parent.title
         flickable: flick
         trailingActionBar {
-            actions: [
-            Action {
-                iconName: "settings"
-                text: i18n.tr("Settings")
-                onTriggered: PopupUtils.open(settingsComponent, root, {url: settings.myUrl}); 
-            },
-            Action {
-                iconName: "help"
-                text: i18n.tr("Help")
-                onTriggered: PopupUtils.open(Qt.resolvedUrl("OfflinePage.qml")) 
-            },
-            Action {
-                iconName: "info"
-                text: i18n.tr("About")
-                onTriggered: PopupUtils.open(Qt.resolvedUrl("About.qml"))
+        actions: [
+        Action {
+          iconName: "settings"
+          text: i18n.tr("Settings")
+          onTriggered: PopupUtils.open(settingsComponent, root, {url: settings.myUrl}); 
+        },            
+        Action {
+          id: themeAction
+          text: {
+            if (settings.theme == "Ambiance"){
+              i18n.tr("Nightmode")
+
             }
-            ]
-            numberOfSlots: 2
+            else {
+              i18n.tr("Daymode")
+            }
+          }
+          iconSource: {
+            if (settings.theme == "Ambiance"){
+              "../img/night-mode.svg"
+
+            }
+            else {
+              "../img/day-mode.svg"
+            }
+          }
+
+          onTriggered: {
+            if (settings.theme == "Ambiance"){
+              Theme.name = "Ubuntu.Components.Themes.SuruDark"
+              settings.theme = "SuruDark"
+              bottomEdge.commit()
+              bottomEdge.collapse()
+            }
+            else {
+              Theme.name = "Ubuntu.Components.Themes.Ambiance"
+              settings.theme = "Ambiance"
+              bottomEdge.commit()
+              bottomEdge.collapse()
+            }
+          }
+        },                
+        Action {
+          iconName: "help"
+          text: i18n.tr("Help")
+          onTriggered: PopupUtils.open(Qt.resolvedUrl("OfflinePage.qml")) 
+        },
+        Action {
+          iconName: "info"
+          text: i18n.tr("About")
+          onTriggered: PopupUtils.open(Qt.resolvedUrl("About.qml"))
+        }
+        ]
+        numberOfSlots: 1
         }
     }
 
@@ -141,6 +176,7 @@ Page {
                 width: parent.width           
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                color: theme.palette.normal.baseText
                 text: i18n.tr("Thanks for using the Zimbra \n Connector for Ubuntu Touch!")
                 fontSize: "large"
             }
@@ -149,6 +185,7 @@ Page {
                 width: parent.width
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
+                color: theme.palette.normal.baseText
                 text: i18n.tr("Get loged in to your \n personal Zimbra Server.")
                 fontSize: "large"
             }
